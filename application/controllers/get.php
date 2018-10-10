@@ -36,6 +36,7 @@ class Get extends CI_Controller {
 	        	'X-VTEX-API-AppToken: SWQWBWQARLAENSCIHSCVHYTWWFXPVVHMMRANMPPTYCRLACPBYPSKYEGUDTAVYAFWDNRVSOVSDIWEGIWUQWRFDWOILFKTOUUYXVHMKUIJUZHPHBOUXGECJZSGZJKNECDJ'
 	        )
 	    ));
+	    header('Content-Type: application/json');
 	    // Send the request & save response to $resp
 	    $resp = curl_exec($curl);
 	    // Close request to clear up some resources
